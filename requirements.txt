@@ -26,7 +26,7 @@ pycparser==2.20
 pyct==0.4.8
 pyOpenSSL==20.0.1
 runway-python==0.6.1
-scipy==1.6.0
+scipy
 six==1.15.0
 torch==1.7.1
 typing-extensions==3.7.4.3
