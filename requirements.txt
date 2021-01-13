@@ -4,7 +4,7 @@ cffi==1.14.4
 click==7.1.2
 colorcet==2.0.2
 cryptography==3.3.1
-cupy-cuda101==8.3.0
+cupy-cuda102==8.3.0
 fastrlock==0.5
 Flask==1.1.2
 Flask-Compress==1.8.0
