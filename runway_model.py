@@ -56,8 +56,10 @@ def generate(model, args):
             out = generate_flow_output(flow_up).astype(np.uint8) ## range [0., 255.] numpy array
 
             if args["side_by_side"]== True:
+
                 original_resized = cv2.resize(np.array(args["image"]), (out.shape[1], out.shape[0]))
-                out = cv2.hconcat([original_resized, out])
+                border = original_resized.shape[1]//2
+                out = cv2.hconcat([original_resized[:,:border,:], out[:,border:,:]])
 
             out = Image.fromarray(out)
         else:
